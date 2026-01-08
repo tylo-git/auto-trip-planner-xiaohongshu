@@ -9,11 +9,11 @@ TRLP 是一个全栈 AI 旅行助手，它不只是简单地调用 LLM，而是�
 <!-- 方式1：直接链接（点击跳转查看） -->
 [点击查看项目介绍视频](asset/intro.mp4)
 
-<!-- 方式2：视频预览（部分浏览器/GitHub 界面支持直接播放） -->
-<video width="800" height="450" controls>
-  <source src="https://raw.githubusercontent.com/tylo-git/auto-trip-planner-based-on-redbook/main/asset/intro.mp4" type="video/mp4">
-  你的浏览器不支持视频播放，请点击链接查看：<a href="asset/intro.mp4">intro.mp4</a>
-</video>
+<!-- B站嵌入（支持直接播放） -->
+<iframe src="https://www.bilibili.com/video/BV1RCiXB8EHz/?vd_source=eeb6d742876231e3fb6a60f95764d2da" 
+        scrolling="no" border="0" frameborder="no" framespacing="0" 
+        width="800" height="450" allowfullscreen="true">
+</iframe>
 
 ---
 
