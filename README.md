@@ -7,12 +7,12 @@ TRLP 是一个全栈 AI 旅行助手，它不只是简单地调用 LLM，而是�
 
 ## 项目介绍视频
 <!-- 方式1：直接链接（点击跳转查看） -->
-[点击查看项目介绍视频](assets/videos/intro.mp4)
+[点击查看项目介绍视频](asset/intro.mp4)
 
 <!-- 方式2：视频预览（部分浏览器/GitHub 界面支持直接播放） -->
 <video width="800" height="450" controls>
-  <source src="https://raw.githubusercontent.com/tylo-git/auto-trip-planner-based-on-redbook/main/assets/videos/intro.mp4" type="video/mp4">
-  你的浏览器不支持视频播放，请点击链接查看：<a href="assets/videos/intro.mp4">intro.mp4</a>
+  <source src="https://raw.githubusercontent.com/tylo-git/auto-trip-planner-based-on-redbook/main/asset/intro.mp4" type="video/mp4">
+  你的浏览器不支持视频播放，请点击链接查看：<a href="asset/intro.mp4">intro.mp4</a>
 </video>
 
 ---
@@ -84,7 +84,7 @@ streamlit run src/app.py
 ---
 
 ## 🏗️ 系统架构 (Architecture)
-![框架路线图](assets/images/roadmap.png)
+![框架路线图](asset/roadmap.png)
 
 ## 📂 项目结构
 
