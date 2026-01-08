@@ -5,6 +5,16 @@
 
 TRLP 是一个全栈 AI 旅行助手，它不只是简单地调用 LLM，而是通过编排多个专家智能体，模拟人类规划师的完整工作流：从全网搜集信息、构建本地知识图谱、推理最佳路线，到撰写深度游玩指南和绘制可视化图表。
 
+## 项目介绍视频
+<!-- 方式1：直接链接（点击跳转查看） -->
+[点击查看项目介绍视频](assets/videos/intro.mp4)
+
+<!-- 方式2：视频预览（部分浏览器/GitHub 界面支持直接播放） -->
+<video width="800" height="450" controls>
+  <source src="https://raw.githubusercontent.com/tylo-git/auto-trip-planner-based-on-redbook/main/assets/videos/intro.mp4" type="video/mp4">
+  你的浏览器不支持视频播放，请点击链接查看：<a href="assets/videos/intro.mp4">intro.mp4</a>
+</video>
+
 ---
 
 ## 🌟 核心特性 (Key Features)
@@ -74,40 +84,7 @@ streamlit run src/app.py
 ---
 
 ## 🏗️ 系统架构 (Architecture)
-
-```mermaid
-graph TD
-    User[用户] -->|UI 交互| Streamlit
-    Streamlit -->|指令| Manager[Manager Agent]
-
-    subgraph "Data Layer"
-        Manager -->|1. 混合检索| Search[Search Client]
-        Search --> XHS[小红书 (MCP)]
-        Search --> Web[DeepSearch (DDGS)]
-    end
-
-    subgraph "Knowledge Layer"
-        Manager -->|2. 提取图谱| KGBuilder[LLM Extraction]
-        KGBuilder --> Neo4j[(Neo4j Graph)]
-    end
-
-    subgraph "Planning Layer"
-        Manager -->|3. 规划行程| Planner[Planner Agent]
-        Planner <--> Neo4j
-    end
-
-    subgraph "Output Layer"
-        Manager -->|4. 深度写作| Writer[Writer Agent]
-        Manager -->|5. 绘图| Figure[Figure Agent]
-        Manager -->|6. 算账| Budget[Budget Agent]
-    end
-
-    Writer --> Guide.md
-    Figure --> Graphviz Map
-    Budget --> Budget.csv
-```
-
----
+![框架路线图](assets/images/roadmap.png)
 
 ## 📂 项目结构
 
